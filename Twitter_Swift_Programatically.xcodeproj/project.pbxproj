@@ -12,6 +12,7 @@
 		69B337C7217745E700E58DB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69B337C5217745E700E58DB6 /* Main.storyboard */; };
 		69B337C9217745E800E58DB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69B337C8217745E800E58DB6 /* Assets.xcassets */; };
 		69B337CC217745E800E58DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69B337CA217745E800E58DB6 /* LaunchScreen.storyboard */; };
+		69B337D42177488900E58DB6 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B337D32177488900E58DB6 /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		69B337C8217745E800E58DB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69B337CB217745E800E58DB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69B337CD217745E800E58DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69B337D32177488900E58DB6 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				69B337C1217745E700E58DB6 /* AppDelegate.swift */,
 				69B337C3217745E700E58DB6 /* ViewController.swift */,
+				69B337D32177488900E58DB6 /* HomeController.swift */,
 				69B337C5217745E700E58DB6 /* Main.storyboard */,
 				69B337C8217745E800E58DB6 /* Assets.xcassets */,
 				69B337CA217745E800E58DB6 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				69B337C4217745E700E58DB6 /* ViewController.swift in Sources */,
 				69B337C2217745E700E58DB6 /* AppDelegate.swift in Sources */,
+				69B337D42177488900E58DB6 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  HomeController.swift
 //  Twitter_Swift_Programatically
 //
 //  Created by masato on 17/10/2018.
@@ -8,13 +8,11 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class HomeController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
-    }
-
+        collectionView?.backgroundColor = .green
+        
+        }
 
 }
-
