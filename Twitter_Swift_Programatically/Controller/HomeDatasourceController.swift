@@ -8,13 +8,17 @@
 
 import LBTAComponents
 
-
 class HomeDatasourceController: DatasourceController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let homeDatasource = HomeDatasource()
         self.datasource = homeDatasource
+    }
+
+    // Cell's Hight
+    override func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: view.frame.width, height: 150)
     }
 
     // Header
