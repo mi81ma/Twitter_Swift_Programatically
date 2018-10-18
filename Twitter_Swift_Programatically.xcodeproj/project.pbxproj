@@ -13,6 +13,8 @@
 		69B337CC217745E800E58DB6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69B337CA217745E800E58DB6 /* LaunchScreen.storyboard */; };
 		69B337D42177488900E58DB6 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B337D32177488900E58DB6 /* HomeController.swift */; };
 		69B337D6217842BE00E58DB6 /* HomeDatasourceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B337D5217842BE00E58DB6 /* HomeDatasourceController.swift */; };
+		69B337DB2178540300E58DB6 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B337DA2178540300E58DB6 /* Cells.swift */; };
+		69B337DD2178545700E58DB6 /* HomeDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B337DC2178545700E58DB6 /* HomeDatasource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		69B337CD217745E800E58DB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69B337D32177488900E58DB6 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		69B337D5217842BE00E58DB6 /* HomeDatasourceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasourceController.swift; sourceTree = "<group>"; };
+		69B337DA2178540300E58DB6 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		69B337DC2178545700E58DB6 /* HomeDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDatasource.swift; sourceTree = "<group>"; };
 		94415BB29C5278F0944AC167 /* Pods-Twitter_Swift_Programatically.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitter_Swift_Programatically.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Twitter_Swift_Programatically/Pods-Twitter_Swift_Programatically.debug.xcconfig"; sourceTree = "<group>"; };
 		E343B8C7B37BDA911A9B4790 /* Pods-Twitter_Swift_Programatically.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Twitter_Swift_Programatically.release.xcconfig"; path = "Pods/Target Support Files/Pods-Twitter_Swift_Programatically/Pods-Twitter_Swift_Programatically.release.xcconfig"; sourceTree = "<group>"; };
 		FF7605FAA3878A52846CCFBE /* Pods_Twitter_Swift_Programatically.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Twitter_Swift_Programatically.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,8 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				69B337C0217745E700E58DB6 /* Twitter_Swift_Programatically */,
-				69B337BF217745E700E58DB6 /* Products */,
 				04921B3FF2C89C396A9DCBEF /* Pods */,
+				69B337BF217745E700E58DB6 /* Products */,
 				EAA01266C300D3F0EAA7BE81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -70,14 +74,40 @@
 		69B337C0217745E700E58DB6 /* Twitter_Swift_Programatically */ = {
 			isa = PBXGroup;
 			children = (
+				69B337D82178539A00E58DB6 /* View */,
+				69B337D9217853B900E58DB6 /* Model */,
+				69B337D72178538800E58DB6 /* Controller */,
 				69B337C1217745E700E58DB6 /* AppDelegate.swift */,
 				69B337D32177488900E58DB6 /* HomeController.swift */,
 				69B337C8217745E800E58DB6 /* Assets.xcassets */,
 				69B337CA217745E800E58DB6 /* LaunchScreen.storyboard */,
 				69B337CD217745E800E58DB6 /* Info.plist */,
-				69B337D5217842BE00E58DB6 /* HomeDatasourceController.swift */,
 			);
 			path = Twitter_Swift_Programatically;
+			sourceTree = "<group>";
+		};
+		69B337D72178538800E58DB6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				69B337D5217842BE00E58DB6 /* HomeDatasourceController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		69B337D82178539A00E58DB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69B337DA2178540300E58DB6 /* Cells.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69B337D9217853B900E58DB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				69B337DC2178545700E58DB6 /* HomeDatasource.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		EAA01266C300D3F0EAA7BE81 /* Frameworks */ = {
@@ -199,7 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69B337DD2178545700E58DB6 /* HomeDatasource.swift in Sources */,
 				69B337C2217745E700E58DB6 /* AppDelegate.swift in Sources */,
+				69B337DB2178540300E58DB6 /* Cells.swift in Sources */,
 				69B337D6217842BE00E58DB6 /* HomeDatasourceController.swift in Sources */,
 				69B337D42177488900E58DB6 /* HomeController.swift in Sources */,
 			);
