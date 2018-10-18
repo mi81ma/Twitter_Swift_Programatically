@@ -19,6 +19,7 @@ class WordCell: UICollectionViewCell {
     let worldLabel: UILabel = {
         let label = UILabel()
         label.text = "TEST TEST TEST"
+        label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
 
@@ -38,14 +39,19 @@ class WordCell: UICollectionViewCell {
 
 }
 
+
+// *************** Controller ***********************
+
 class HomeController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
 
     let cellId = "cellId"
+    let headerId = "headerId"
 
     override func viewDidLoad() {
         super.viewDidLoad()
         collectionView?.backgroundColor = .white
-        collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView?.register(WordCell.self, forCellWithReuseIdentifier: cellId)
+        collectionView?.register(UICollectionViewCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: headerId)
         
         }
 
