@@ -18,9 +18,42 @@ class HomeDatasourceController: DatasourceController {
         self.datasource = homeDatasource
     }
 
+
+    // Title Image in NavigationBar (Twitter Image)
     private func setupNavigationBarItems() {
-        print(123)
+
+        let titleImageView = UIImageView(image: #imageLiteral(resourceName: "Twitter"))
+        titleImageView.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
+
+        // get slim the Image
+        titleImageView.contentMode = .scaleAspectFit
+
+        navigationItem.titleView = titleImageView
+
+
+        // Follow Image in NavigationBar (Follow People Image)
+        let followButton = UIButton(type: .system)
+        // .withRenderingMode(.alwaysOriginal) is adjusted Image Color
+        followButton.setImage(#imageLiteral(resourceName: "AddContact").withRenderingMode(.alwaysOriginal), for: .normal)
+        followButton.frame = CGRect(x: 0 , y: 0, width: 34, height: 34)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: followButton)
+
+
+
+        // Right Side 2 Buttons in NavigationBar
+        let composeButton = UIButton(type: .system)
+        composeButton.setImage(#imageLiteral(resourceName: "Write").withRenderingMode(.alwaysOriginal), for: .normal)
+        composeButton.frame = CGRect(x: 10, y: 0, width: 34, height: 34)
+
+        let searchButton = UIButton(type: .system)
+        searchButton.setImage(#imageLiteral(resourceName: "search").withRenderingMode(.alwaysOriginal), for: .normal)
+        searchButton.frame = CGRect(x: 0, y: 0, width: 34, height: 34)
+
+        navigationItem.rightBarButtonItems = [UIBarButtonItem(customView: composeButton), UIBarButtonItem(customView: searchButton)]
     }
+    
+
+
 
 
     // the gap between cellss

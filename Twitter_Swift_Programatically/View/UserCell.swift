@@ -71,10 +71,10 @@ class UserCell: DatasourceCell {
         button.setTitle("Follow", for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 14)
         button.setTitleColor(twitterBlue, for: .normal)
-        button.titleEdgeInsets = UIEdgeInsets(top: 0, left: -40, bottom: 0, right: 0) // Title "Follow" Position
+        button.titleEdgeInsets = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 0) // Title "Follow" Position
 
         // Icon Setting
-        button.setImage(#imageLiteral(resourceName: "PlusPeople"), for: .normal)
+        button.setImage(#imageLiteral(resourceName: "AddContact"), for: .normal)
         button.imageView?.contentMode = .scaleAspectFit
         button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 0)
         //        button.titleEdgeInsets = UIEdgeInsets
