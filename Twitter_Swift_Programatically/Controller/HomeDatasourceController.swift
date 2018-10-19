@@ -35,9 +35,12 @@ class HomeDatasourceController: DatasourceController {
 //            print(user.bioText)
             // let's get an estimation of the height of our cell based on user.bioText
 
-            let approximateWidthOfBioTextView = view.frame.width - 12 - 50 - 12
+
+            // Cell Size Coding
+            let approximateWidthOfBioTextView = view.frame.width - 12 - 50 - 12 - 2
             let size = CGSize(width: approximateWidthOfBioTextView, height: 1000)
 
+            // Cell Size
             let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15)]
 
             let estimatedFrame = NSString(string: user.bioText).boundingRect(with: size, options: .usesLineFragmentOrigin, attributes: attributes, context: nil)
