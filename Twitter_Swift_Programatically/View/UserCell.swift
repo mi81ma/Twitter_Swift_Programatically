@@ -56,6 +56,7 @@ class UserCell: DatasourceCell {
         textView.text = "iPhone, iPad, iOS Programming Community. Join us to learn Swift, Objective-C and build iOS apps!"
         textView.font = UIFont.systemFont(ofSize: 15)
         textView.backgroundColor = .clear
+//        textView.backgroundColor = .red
         return textView
     }()
 
@@ -85,6 +86,8 @@ class UserCell: DatasourceCell {
 
         separatorLineView.isHidden = false
         separatorLineView.backgroundColor = UIColor(r: 230, g:230, b:230)
+
+//        self.backgroundColor = .blue
 
         addSubview(profileImageView)
         addSubview(nameLabel)

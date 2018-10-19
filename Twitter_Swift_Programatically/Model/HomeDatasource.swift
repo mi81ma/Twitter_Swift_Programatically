@@ -12,11 +12,13 @@ import LBTAComponents
 class HomeDatasource: Datasource {
 
     let users: [User] = {
-        let brianUser = User(name: "Brian Voong", username: "@buildthatapp", bioText: "SOME MORE BIO TEXT", profileImage:#imageLiteral(resourceName: "A4"))
+        let brianUser = User(name: "Brian Voong", username: "@buildthatapp", bioText: "iPhone, iPad, iOS Programming Community. Join us to learn Swift, Objective-C and build iOS apps!", profileImage:#imageLiteral(resourceName: "A4"))
 
         let rayUser = User(name: "Ray Wenderlich", username: "@rwenderlich", bioText: "Ray Wenderlich is as iPhone developer and tweets on topics related to iPhone, software, and gaming. Check out our conference.", profileImage:#imageLiteral(resourceName: "Ad"))
 
-        return [brianUser, rayUser]
+        let kindleCourseUser = User(name: "Kindle Course", username: "@kindleCourse", bioText: "This recently released course on https:llvideos.letsbuildthatapp.com/basic-training provides some excellent guidance on how to use UITableView", profileImage: #imageLiteral(resourceName: "A4"))
+
+        return [brianUser, rayUser, kindleCourseUser]
     }()
 
 //    let words = ["user1", "user2", "user3"]
